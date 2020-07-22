@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/pc.css">
+  <link rel="shortcut icon" href="//s1.music.126.net/style/favicon.ico?v20180823">
+  <script type="text/javascript">
+    var userAgentInfo = navigator.userAgent;
+    var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+    var flag = false;
+    var v=0
+    for ( v = 0; v < Agents.length; v++)
+    {
+      if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }
+    }
+    if(flag){
+      window.location='iphone.html';  //如果是移动设备访问，就跳转到m.html。
+    }
+  </script>
+</head>
+<body>
+<div class="top_bar">
+  <div class="m_top">
+    <h1 class="logo">
+      <a href="#">网易云音乐</a>
+    </h1>
+    <ul class="m_nav">
+      <li><a  class="active" href="#">发现音乐<sub class="show">&nbsp;</sub></a></li>
+      <li><a href="#">我的音乐</a></li>
+      <li><a href="#">朋友</a></li>
+      <li><a href="#">商城</a></li>
+      <li><a href="#">音乐人</a></li>
+      <li><a href="#">下载客户端</a><sup class="hot">&nbsp;</sup></li>
+    </ul>
+    <div class="f_pr">
+      <a href="#">登录</a>
+    </div>
+    <div class="f_pr2">
+      <a href="#">创作者中心</a>
+    </div>
+    <div class="f_pr3">
+      <input type="text" placeholder="音乐/视频/电台/用户" onfocus="if(placeholder=='音乐/视频/电台/用户'){placeholder=''}" onblur="if(placeholder==''){placeholder='音乐/视频/电台/用户'}">
+    </div>
+  </div>
+  <div class="m_top2">
+    <div class="wrap">
+      <ul>
+        <li><a class="active" href="#">推荐</a></li>
+        <li><a href="#">排行榜</a></li>
+        <li><a href="#">歌单<span></span></a></li>
+        <li><a href="#">主播电台</a></li>
+        <li><a href="#">歌手</a></li>
+        <li><a href="#">新碟上架</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+<div class="banner">
+  <div class="banner_1">
+    <div class="ban_img">
+      <a href="javascript:void(0);">
+        <img src="img/img1.jpg">
+      </a>
+    </div>
+    <a class="btn1" href="javascript:void(0);"><</a>
+    <a class="btn2" href="javascript:void(0)">></a>
+    <div class="download">
+      <a href="javascript:void(0)">下载客户端</a>
+      <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+    </div>
+  </div>
+</div>
+<div class="discover-module">
+  <div class="g-mn1">
+    <div class="vouch">
+      <a href="javascript:void(0);">
+        热门推荐
+      </a>
+      <div class="tab">
+        <a href="javascript:void(0);">华语</a>
+        <span>|</span>
+        <a href="javascript:void(0);">流行</a>
+        <span>|</span>
+        <a href="javascript:void(0);">摇滚</a>
+        <span>|</span>
+        <a href="javascript:void(0);">民谣</a>
+        <span>|</span>
+        <a href="javascript:void(0);">电子</a>
+      </div>
+      <div class="more">
+        <a href="javascript:void(0);">更多</a>
+        <span>&nbsp;</span>
+      </div>
+    </div>
+    <ul class="list">
+      <li>
+        <div class="u-cover">
+          <img src="img/1.jpg" alt="">
+          <a class="list-a" href="javascript:void(0);"></a>
+          <div class="bottom">
+            <a class="b-a1" href="javascript:void(0);" title="播放"></a>
+            <span class="b-s1"></span>
+            <span class="b-s2">512万</span>
+          </div>
+        </div>
+        <p>
+          <a href="javascript:void(0);">天籁和声|男女合唱|极致之声</a>
+        </p>
+      </li>
+      <li class="l-l">
+        <div class="u-cover">
+          <img src="img/2.png" alt="">
+          <a class="list-a" href="javascript:void(0);"></a>
+          <div class="bottom">
+            <a class="b-a1" href="javascript:void(0);" title="播放"></a>
+            <span class="b-s1"></span>
+            <span class="b-s2">12万</span>
+          </div>
+        </div>
+        <p>
+          <a href="javascript:void(0);">文物图鉴|甲骨问策，篆饰为妆，风雅入宫商</a>
+        </p>
+      </li>
+      <li class="l-l">
+        <div class="u-cover">
+          <img src="img/3.png" alt="">
+          <a class="list-a" href="javascript:void(0);"></a>
+          <div class="bottom">
+            <a class="b-a1" href="javascript:void(0);" title="播放"></a>
+            <span class="b-s1"></span>
+            <span class="b-s2">52万</span>
+          </div>
+        </div>
+        <p>
+          <a href="javascript:void(0);">［翻唱］好听的歌都没有完整版</a>
+        </p>
+      </li>
+      <li class="l-l-4">
+        <div class="u-cover">
+          <img src="img/4.png" alt="">
+          <a class="list-a" href="javascript:void(0);"></a>
+          <div class="bottom">
+            <a class="b-a1" href="javascript:void(0);" title="播放"></a>
+            <span class="b-s1"></span>
+            <span class="b-s2">5120万</span>
+          </div>
+        </div>
+        <p>
+          <a href="javascript:void(0);"><i class="icon"></i>「第8封」其实，我一直喜欢你...</a>
+        </p>
+      </li>
+      <li class="l-l-5">
+        <div class="u-cover">
+          <img src="img/5.png" alt="">
+          <a class="list-a" href="javascript:void(0);"></a>
+          <div class="bottom">
+            <a class="b-a1" href="javascript:void(0);" title="播放"></a>
+            <span class="b-s1"></span>
+            <span class="b-s2">502万</span>
+          </div>
+        </div>
+        <p>
+          <a href="javascript:void(0);">好听的歌没有完整版，就像喜欢的人没有结局</a>
+        </p>
+      </li>
+      <li class="l-l">
+        <div class="u-cover">
+          <img src="img/6.png" alt="">
+          <a class="list-a" href="javascript:void(0);"></a>
+          <div class="bottom">
+            <a class="b-a1" href="javascript:void(0);" title="播放"></a>
+            <span class="b-s1"></span>
+            <span class="b-s2">78万</span>
+          </div>
+        </div>
+        <p>
+          <a href="javascript:void(0);"><i class="icon"></i> 滚石40——爱情的样子</a>
+        </p>
+      </li>
+      <li class="l-l">
+        <div class="u-cover">
+          <img src="img/7.png" alt="">
+          <a class="list-a" href="javascript:void(0);"></a>
+          <div class="bottom">
+            <a class="b-a1" href="javascript:void(0);" title="播放"></a>
+            <span class="b-s1"></span>
+            <span class="b-s2">92万</span>
+          </div>
+        </div>
+        <p>
+          <a href="javascript:void(0);">维吾尔语精选歌曲</a>
+        </p>
+      </li>
+      <li class="l-l-8">
+        <div class="u-cover">
+          <img src="img/8.png" alt="">
+          <a class="list-a" href="javascript:void(0);"></a>
+          <div class="bottom">
+            <a class="b-a1" href="javascript:void(0);" title="播放"></a>
+            <span class="b-s1"></span>
+            <span class="b-s2">102万</span>
+          </div>
+        </div>
+        <p>
+          <a href="javascript:void(0);"><i class="icon"></i> 不懂事尾奏</a>
+        </p>
+      </li>
+    </ul>
+    <div class="n-clmnd"></div>
+    <div class="n-new">
+      <div class="v-hd2">
+        <a href="javascript:void(0);">新碟上架</a>
+        <div class="more">
+          <a href="javascript:void(0);">更多</a>
+          <span>&nbsp;</span>
+        </div>
+      </div>
+      <div class="n-disk">
+        <div class="inner">
+          <a class="pre" href="javascript:void(0);">&nbsp;</a>
+          <div class="roll">
+            <ul>
+              <li>
+                <div class="u-cover">
+                  <img src="img/new1.jpg" alt="">
+                  <a class="msk" href="javascript:void(0);"></a>
+                </div>
+                <p><a href="javascript:void(0);">RANDOM BOX</a></p>
+                <p><a href="javascript:void(0);">Zico</a></p>
+              </li>
+              <li>
+                <div class="u-cover">
+                  <img src="img/new2.jpg" alt="">
+                  <a class="msk" href="javascript:void(0);"></a>
+                </div>
+                <p><a href="javascript:void(0);">我想我不一样</a></p>
+                <p><a href="javascript:void(0);">张紫宁</a></p>
+              </li>
+              <li>
+                <div class="u-cover">
+                  <img src="img/new3.jpg" alt="">
+                  <a class="msk" href="javascript:void(0);"></a>
+                </div>
+                <p><a href="javascript:void(0);">But U</a></p>
+                <p><a href="javascript:void(0);">NINEONE#</a></p>
+              </li>
+              <li>
+                <div class="u-cover">
+                  <img src="img/new4.png" alt="">
+                  <a class="msk" href="javascript:void(0);"></a>
+                </div>
+                <p><a href="javascript:void(0);">飞翔吧！少年</a></p>
+                <p><a href="javascript:void(0);">胡夏</a></p>
+              </li>
+              <li>
+                <div class="u-cover">
+                  <img src="img/new5.png" alt="">
+                  <a class="msk" href="javascript:void(0);"></a>
+                </div>
+                <p><a href="javascript:void(0);">オヒアの木</a></p>
+                <p><a href="javascript:void(0);">浜崎あゆみ</a></p>
+              </li>
+            </ul>
+          </div>
+          <a class="next" href="javascript:void(0);">&nbsp;</a>
+        </div>
+      </div>
+    </div>
+    <div class="n-bill">
+      <div class="v-hd3">
+        <a class="v-a" href="javascript:void(0);">榜单</a>
+        <div class="more">
+          <a href="javascript:void(0);">更多</a>
+          <span>&nbsp;</span>
+        </div>
+      </div>
+      <div class="n-bilst">
+        <dl class="blk ">
+          <dt class="top">
+            <div class="u-cover">
+              <img class="j-img" src="img/bill.jpg">
+              <a href="" class="msk"></a>
+            </div>
+            <div class="tit">
+              <a href="#"><h3 class="f-fs1">云音乐飙升榜</h3></a>
+              <div class="btn">
+                <a href="javascript:;" class="f-tdn" >播放</a>
+                <a href="javascript:;"class="s-bg">收藏</a>
+              </div>
+            </div>
+          </dt>
+          <dd>
+            <ol>
+              <li>
+                <span class="no no-top">1</span>
+                <a href="#" class="nm s-fc0 f-thide" title="重启">重启</a>
+              </li>
+              <li>
+                <span class="no no-top">2</span>
+                <a href="#" class="nm s-fc0 f-thide" title="你说爱情啊">你说爱情啊</a>
+              </li>
+              <li  >
+                <span class="no no-top">3</span>
+                <a href="#" class="nm s-fc0 f-thide" title="无限">无限</a>
+              </li>
+              <li>
+                <span class="no">4</span>
+                <a href="#" class="nm s-fc0 f-thide" title="往下跳">往下跳</a>
+              </li>
+              <li>
+                <span class="no">5</span>
+                <a href="#" class="nm s-fc0 f-thide" title="铁三角">铁三角</a>
+              </li>
+              <li>
+                <span class="no">6</span>
+                <a href="#" class="nm s-fc0 f-thide" title="たぶん">たぶん</a>
+              </li>
+              <li>
+                <span class="no">7</span>
+                <a href="#" class="nm s-fc0 f-thide" title="约定的梦幻岛">约定的梦幻岛</a>
+              </li>
+              <li>
+                <span class="no">8</span>
+                <a href="" class="nm s-fc0 f-thide" title="Lily of the Valley">Lily of the Valley</a>
+              </li>
+              <li>
+                <span class="no">9</span>
+                <a href="/song?id=1463420816" class="nm s-fc0 f-thide" title="无途">无途</a>
+              </li>
+              <li>
+                <span class="no">10</span>
+                <a href="#" class="nm s-fc0 f-thide" title="To Be Loved">To Be Loved</a>
+              </li>
+            </ol>
+            <div class="more"><a href="#" class="s-fc0">查看全部&gt;</a></div>
+          </dd>
+        </dl>
+        <dl class="blk ">
+          <dt class="top">
+            <div class="u-cover">
+              <img class="j-img" src="img/bill2.jpg">
+              <a href="" class="msk"></a>
+            </div>
+            <div class="tit">
+              <a href="#"><h3 class="f-fs1">云音乐新歌榜</h3></a>
+              <div class="btn">
+                <a href="javascript:;" class="f-tdn" >播放</a>
+                <a href="javascript:;"class="s-bg">收藏</a>
+              </div>
+            </div>
+          </dt>
+          <dd>
+            <ol>
+              <li>
+                <span class="no no-top">1</span>
+                <a href="#" class="nm s-fc0 f-thide" title="重启">重启</a>
+              </li>
+              <li>
+                <span class="no no-top">2</span>
+                <a href="#" class="nm s-fc0 f-thide" title="你说爱情啊">你说爱情啊</a>
+              </li>
+              <li  >
+                <span class="no no-top">3</span>
+                <a href="#" class="nm s-fc0 f-thide" title="无限">无限</a>
+              </li>
+              <li>
+                <span class="no">4</span>
+                <a href="#" class="nm s-fc0 f-thide" title="往下跳">往下跳</a>
+              </li>
+              <li>
+                <span class="no">5</span>
+                <a href="#" class="nm s-fc0 f-thide" title="铁三角">铁三角</a>
+              </li>
+              <li>
+                <span class="no">6</span>
+                <a href="#" class="nm s-fc0 f-thide" title="たぶん">たぶん</a>
+              </li>
+              <li>
+                <span class="no">7</span>
+                <a href="#" class="nm s-fc0 f-thide" title="约定的梦幻岛">约定的梦幻岛</a>
+              </li>
+              <li>
+                <span class="no">8</span>
+                <a href="" class="nm s-fc0 f-thide" title="Lily of the Valley">Lily of the Valley</a>
+              </li>
+              <li>
+                <span class="no">9</span>
+                <a href="/song?id=1463420816" class="nm s-fc0 f-thide" title="无途">无途</a>
+              </li>
+              <li>
+                <span class="no">10</span>
+                <a href="#" class="nm s-fc0 f-thide" title="To Be Loved">To Be Loved</a>
+              </li>
+            </ol>
+            <div class="more"><a href="#" class="s-fc0">查看全部&gt;</a></div>
+          </dd>
+        </dl>
+        <dl class="blk blk-1">
+          <dt class="top">
+            <div class="u-cover">
+              <img class="j-img" src="img/bill3.jpg">
+              <a href="" class="msk"></a>
+            </div>
+            <div class="tit">
+              <a href="#"><h3 class="f-fs1">网易原创歌曲榜</h3></a>
+              <div class="btn">
+                <a href="javascript:;" class="f-tdn" >播放</a>
+                <a href="javascript:;"class="s-bg">收藏</a>
+              </div>
+            </div>
+          </dt>
+          <dd>
+            <ol>
+              <li>
+                <span class="no no-top">1</span>
+                <a href="#" class="nm s-fc0 f-thide" title="重启">重启</a>
+              </li>
+              <li>
+                <span class="no no-top">2</span>
+                <a href="#" class="nm s-fc0 f-thide" title="你说爱情啊">你说爱情啊</a>
+              </li>
+              <li  >
+                <span class="no no-top">3</span>
+                <a href="#" class="nm s-fc0 f-thide" title="无限">无限</a>
+              </li>
+              <li>
+                <span class="no">4</span>
+                <a href="#" class="nm s-fc0 f-thide" title="往下跳">往下跳</a>
+              </li>
+              <li>
+                <span class="no">5</span>
+                <a href="#" class="nm s-fc0 f-thide" title="铁三角">铁三角</a>
+              </li>
+              <li>
+                <span class="no">6</span>
+                <a href="#" class="nm s-fc0 f-thide" title="たぶん">たぶん</a>
+              </li>
+              <li>
+                <span class="no">7</span>
+                <a href="#" class="nm s-fc0 f-thide" title="约定的梦幻岛">约定的梦幻岛</a>
+              </li>
+              <li>
+                <span class="no">8</span>
+                <a href="" class="nm s-fc0 f-thide" title="Lily of the Valley">Lily of the Valley</a>
+              </li>
+              <li>
+                <span class="no">9</span>
+                <a href="/song?id=1463420816" class="nm s-fc0 f-thide" title="无途">无途</a>
+              </li>
+              <li>
+                <span class="no">10</span>
+                <a href="#" class="nm s-fc0 f-thide" title="To Be Loved">To Be Loved</a>
+              </li>
+            </ol>
+            <div class="more"><a href="#" class="s-fc0">查看全部&gt;</a></div>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="g-sd1">
+    <div class="n-user-profile"> <div class="n-myinfo n-myinfo-1 s-bg s-bg-1"><p class="note s-fc3">登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p><a id="index-enter-default" href="#" onclick="top.login();return false;" class="btn s-bg s-bg-2 f-tdn" tabindex="1">用户登录</a></div></div>
+    <div class="n-singer">
+      <h3 class="v-hd3">
+        <span class="f-fl">入驻歌手</span>
+        <a href="/discover/artist/signed/" class="more s-fc3">查看全部 &gt;</a>
+      </h3>
+      <ul class="n-enter f-cb" id="singer-list">
+        <li>
+          <a href="#" class="itm f-tdn">
+            <div class="head"><img class="j-img" src="img/singer1.jpg"></div>
+            <div class="ifo">
+              <h4><span class="nm f-fs1 f-ib f-thide">张惠妹aMEI</span></h4>
+              <p class="f-thide s-fc3">台湾歌手张惠妹</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="itm f-tdn">
+            <div class="head"><img class="j-img" src="img/singer2.jpg"></div>
+            <div class="ifo">
+              <h4><span class="nm f-fs1 f-ib f-thide">Fine乐团</span></h4>
+              <p class="f-thide s-fc3">独立音乐人</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="itm f-tdn">
+            <div class="head"><img class="j-img" src="img/singer3.png"></div>
+            <div class="ifo">
+              <h4><span class="nm f-fs1 f-ib f-thide">萬曉利</span></h4>
+              <p class="f-thide s-fc3">民谣歌手、中国现代民谣的代表人物之一</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="itm f-tdn">
+            <div class="head"><img class="j-img" src="img/singer4.png"></div>
+            <div class="ifo">
+              <h4><span class="nm f-fs1 f-ib f-thide">音乐人赵雷</span></h4>
+              <p class="f-thide s-fc3">民谣歌手</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="itm f-tdn">
+            <div class="head"><img class="j-img" src="img/singer5.png"></div>
+            <div class="ifo">
+              <h4><span class="nm f-fs1 f-ib f-thide">王三溥</span></h4>
+              <p class="f-thide s-fc3">音乐人</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div><a href="#" class="u-btn2 u-btn2-1"><i>申请成为网易音乐人</i></a></div>
+    </div>
+    <div class="n-dj n-dj-1">
+      <h3 class="v-hd3">热门主播</h3>
+      <ul class="n-hotdj f-cb" id="hotdj-list">
+        <li>
+          <a href="#" class="cver"><img class="j-img" src="img/singer6.png"></a>
+          <div class="info">
+            <p><a href="#" class="nm-icn f-thide s-fc0">陈立</a> <sup class="u-icn u-icn-1 "></sup>
+            </p>
+            <p class="f-thide s-fc3">心理学家、美食家陈立教授</p>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="cver"><img class="j-img" src="img/singer7.png"></a>
+          <div class="info">
+            <p><a href="#" class="nm-icn f-thide s-fc0">DJ艳秋</a> <sup class="u-icn u-icn-1 "></sup>
+            </p>
+            <p class="f-thide s-fc3">著名音乐节目主持人</p>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="cver"><img class="j-img" src="img/singer8.png"></a>
+          <div class="info">
+            <p><a href="#" class="nm-icn f-thide s-fc0">国家大剧院古典音乐频道</a> <sup class="u-icn u-icn-1 "></sup>
+            </p>
+            <p class="f-thide s-fc3">国家大剧院古典音乐官方</p>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="cver"><img class="j-img" src="img/singer9.png"></a>
+          <div class="info">
+            <p><a href="#" class="nm-icn f-thide s-fc0">谢谢收听</a> <sup class="u-icn u-icn-1 "></sup>
+            </p>
+            <p class="f-thide s-fc3">南京电台主持人王馨</p>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="cver"><img class="j-img" src="img/singer10.png"></a>
+          <div class="info">
+            <p><a href="#" class="nm-icn f-thide s-fc0">DJ晓苏</a> <sup class="u-icn u-icn-1 "></sup>
+            </p>
+            <p class="f-thide s-fc3">独立DJ，CRI环球旅游广播特邀DJ</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="g-ft">
+  <div class="m-ft">
+    <div class="wrap">
+      <div class="copy">
+        <p class="link" id="music-link">
+          <a href="//st.music.163.com/official-terms/service" target="_blank" class="item s-fc4">服务条款</a><span class="line">|</span>
+          <a href="//st.music.163.com/official-terms/privacy" target="_blank" class="item s-fc4">隐私政策</a><span class="line">|</span>
+          <a href="//st.music.163.com/official-terms/children" target="_blank" class="item s-fc4">儿童隐私政策</a><span class="line">|</span>
+          <a href="//music.163.com/st/staticdeal/complaints.html" target="_blank" class="item s-fc4">版权投诉指引</a><span class="line">|</span>
+          <a id="g_feedback" href="#" class="item s-fc4" onclick="nm.x.feedback();return false;" hidefocus="true">意见反馈</a>
+          <span class="line">|</span><a class="s-fc4"></a></p>
+        <p class="right s-fc3">
+          <span class="sep span">网易公司版权所有©1997-2020</span><span class="span">杭州乐读科技有限公司运营：
+        </span><a href="#" class="alink s-fc3">浙网文[2018]3506-263号</a>
+        </p>
+        <p class="contact s-fc3">
+          <span class="sep span">违法和不良信息举报电话：0571-89853516</span>
+          <span class="span">举报邮箱：</span><a class="alink" href="#">ncm5990@163.com</a>
+        </p>
+        <p class="right s-fc3">
+          <span class="sep span">粤B2-20090191-18</span><a href="#" class="alink s-fc3">工业和信息化部备案管理系统网站</a>
+          <a href="#" class="alink s-fc3 police-link">
+            <span class="police-logo"></span>
+            <span class="police-text">浙公网安备 33010902002564号</span>
+          </a>
+        </p>
+        <ul class="enter f-fr">
+          <li class="unit">
+            <a class="logo logonew logo-amped f-tid" href="https://web-amped.music.163.com/"></a>
+            <span class="tt tt-amped"></span>
+          </li>
+          <li class="unit">
+            <a class="logo logonew logo-auth f-tid" href="#" ></a>
+            <span class="tt tt-auth"></span>
+          </li>
+          <li class="unit">
+            <a class="logo logonew logo-musician f-tid" href="#" ></a>
+            <span class="tt tt-musician"></span>
+          </li>
+          <li class="unit">
+            <a class="logo logonew logo-reward f-tid" href="#" ></a>
+            <span class="tt tt-reward"></span>
+          </li>
+          <li class="unit">
+            <a class="logo logonew logo-cash f-tid" href="#" ></a>
+            <span class="tt tt-cash"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
